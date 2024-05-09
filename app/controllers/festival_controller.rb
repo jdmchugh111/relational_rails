@@ -1,2 +1,0 @@
-class FestivalsController < ApplicationController
-end
