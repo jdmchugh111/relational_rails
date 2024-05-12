@@ -240,12 +240,34 @@
           null,
           1,
           1,
+          1,
           null
         ]
       },
       "/Users/james/Turing/Mod_2/relational_rails/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          null
+        ]
+      },
+      "/Users/james/Turing/Mod_2/relational_rails/spec/features/songs/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
           null
         ]
       },
@@ -271,18 +293,7 @@
           null
         ]
       },
-      "/Users/james/Turing/Mod_2/relational_rails/spec/models/artist_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/james/Turing/Mod_2/relational_rails/app/models/artist.rb": {
+      "/Users/james/Turing/Mod_2/relational_rails/app/models/festival.rb": {
         "lines": [
           1,
           1,
@@ -296,20 +307,25 @@
           null
         ]
       },
-      "/Users/james/Turing/Mod_2/relational_rails/spec/models/festival_spec.rb": {
+      "/Users/james/Turing/Mod_2/relational_rails/app/models/artist.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/james/Turing/Mod_2/relational_rails/app/controllers/artists_controller.rb": {
         "lines": [
           1,
           null,
           1,
           1,
-          2,
           null,
           null
         ]
       },
-      "/Users/james/Turing/Mod_2/relational_rails/app/models/festival.rb": {
+      "/Users/james/Turing/Mod_2/relational_rails/app/controllers/application_controller.rb": {
         "lines": [
-          1,
           1,
           null
         ]
@@ -326,14 +342,8 @@
           null,
           null
         ]
-      },
-      "/Users/james/Turing/Mod_2/relational_rails/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
       }
     },
-    "timestamp": 1715554853
+    "timestamp": 1715556896
   }
 }

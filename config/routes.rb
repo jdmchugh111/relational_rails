@@ -10,4 +10,5 @@ Rails.application.routes.draw do
 
   get "/festivals", to: "festivals#index"
   get "/festivals/:id", to: "festivals#show"
+  get "/artists", to: "artists#index"
 end
