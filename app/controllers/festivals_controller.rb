@@ -8,10 +8,10 @@ class FestivalsController < ApplicationController
         @artists = Artist.all
     end
 
-    def show_artists
-        @festival = Festival.find(params[:id])
-        @artists = Artist.all
-    end
+    # def show_artists
+    #     @festival = Festival.find(params[:id])
+    #     @artists = Artist.all
+    # end
 
     def new
     end

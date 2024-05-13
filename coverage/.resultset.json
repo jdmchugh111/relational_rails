@@ -618,9 +618,9 @@
           5,
           null,
           null,
-          1,
-          4,
-          4,
+          null,
+          null,
+          null,
           null,
           null,
           1,
@@ -705,8 +705,20 @@
           null,
           null
         ]
+      },
+      "/Users/james/Turing/Mod_2/relational_rails/app/controllers/festival_artists_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          4,
+          4,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1715618628
+    "timestamp": 1715619197
   }
 }

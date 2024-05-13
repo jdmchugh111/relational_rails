@@ -1,0 +1,14 @@
+<h1><%= @festival.name %></h1>
+
+<a href="artists/new">Create Artist</a>
+<% @all_artists = [] %>
+<% @artists.each do |artist| %>
+    <% if artist.festival_id == @festival.id %>
+        <% @all_artists << artist %>
+    <% end %>
+<% end %>
+<% @all_artists.each do |artist| %>
+        <h3><%= artist.name %></h3>
+        <p>Performers: <%= artist.performers %></p>
+        <p>Headliner: <%= artist.headliner %></p>
+<% end %>
