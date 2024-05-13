@@ -1,6 +1,8 @@
 <h1><%= @festival.name %></h1>
 
 <a href="artists/new">Create Artist</a>
+<br>
+<%= link_to "Sort Artists by Name", "artists?sort=alpha" %>
 <% @all_artists = [] %>
 <% @artists.each do |artist| %>
     <% if artist.festival_id == @festival.id %>
