@@ -1,7 +1,7 @@
 class ArtistsController < ApplicationController
 
     def index
-        @artists = Artist.all
+        @artists = Artist.where(headliner: true)
     end
 
     def show
