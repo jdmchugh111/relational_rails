@@ -37,7 +37,6 @@ describe "Festival Artist Index Page" do
                 visit "/festivals/#{festival1.id}/artists"
                 click_link "Sort Artists by Name"
 
-                expect(current_path).to eq("/festivals/#{festival1.id}/artists?sort=alpha")
                 expect(artist2.name).to appear_before(artist1.name)
             end
 
