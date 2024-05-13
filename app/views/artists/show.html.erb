@@ -1,5 +1,6 @@
-<h1><%= @artists.name %></h1>
+<h1><%= @artist.name %></h1>
 
-<p>Performers: <%= @artists.performers %></p>
-<p>Headliner: <%= @artists.headliner %></p>
-<p>Festival Id: <%= @artists.festival_id %></p>
+<a href="<%= @artist.id %>/edit">Update Artist</a>
+<p>Performers: <%= @artist.performers %></p>
+<p>Headliner: <%= @artist.headliner %></p>
+<p>Festival Id: <%= @artist.festival_id %></p>

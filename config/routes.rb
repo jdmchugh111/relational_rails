@@ -9,8 +9,16 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   get "/festivals", to: "festivals#index"
+  get "/festivals/new", to: "festivals#new"
+  post "/festivals", to: "festivals#create"
   get "/festivals/:id", to: "festivals#show"
   get "/artists", to: "artists#index"
   get "/artists/:id", to: "artists#show"
-  get "festivals/:id/artists", to: "festivals#show_artists"
+  get "festivals/:id/artists", to: "festival_artists#index"
+  get "festivals/:id/edit", to: "festivals#edit"
+  patch "festivals/:id", to: "festivals#update"
+  get "festivals/:id/artists/new", to: "artists#new"
+  post "festivals/:id/artists", to: "artists#create"
+  get "artists/:id/edit", to: "artists#edit"
+  patch "artists/:id", to: "artists#update"
 end

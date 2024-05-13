@@ -19,6 +19,18 @@ describe "Festival Index Page" do
 
                 expect(that).to appear_before(this)
             end
+
+            it "has a link for New Festival" do
+                visit "/festivals"
+                expect(page).to have_link "New Festival"
+            end
+
+            it "redirects me to New Festival page when I click the link" do
+                visit "/festivals"
+                click_link "New Festival"
+
+                expect(current_path).to eq("/festivals/new")
+            end
         end
     end
 end

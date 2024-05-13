@@ -1,0 +1,10 @@
+<form action="/festivals/<%= @festival.id %>" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <input type="hidden" name="_method" value="PATCH" />
+  <p>Edit</p>
+  <input type='text' name='name' value="<%= @festival.name %>"/><br/>
+  <input type='text' name='location' value="<%= @festival.location %>"/><br/>
+  <input type='text' name='stages' value="<%= @festival.stages %>"/><br/>
+  <input type='text' name='age_restricted' value="<%= @festival.age_restricted %>"/><br/>
+  <input type='submit' value="Update Festival"/>
+</form>
