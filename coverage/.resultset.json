@@ -242,6 +242,7 @@
           1,
           1,
           1,
+          1,
           null
         ]
       },
@@ -287,6 +288,33 @@
           null,
           1,
           null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/james/Turing/Mod_2/relational_rails/spec/features/songs/show_artists_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
           1,
           1,
           null,
@@ -390,10 +418,15 @@
           1,
           1,
           null,
+          null,
+          1,
+          1,
+          1,
+          null,
           null
         ]
       }
     },
-    "timestamp": 1715557707
+    "timestamp": 1715560626
   }
 }
