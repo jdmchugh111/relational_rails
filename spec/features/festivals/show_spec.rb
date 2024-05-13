@@ -23,7 +23,17 @@ describe "Festival Show Page" do
 
                 expect(page).to have_content("Artists: 2")
             end
-                
+
+            it "has a link that directs you to show_artists page" do
+                festival1 = Festival.create!(name: "Bonnaroo", location: "Manchester, TN", stages: 5, age_restricted: true)
+                artist1 = Artist.create!(name: "Pretty Lights", performers: 1, headliner: true, festival_id: festival1.id)
+                artist2 = Artist.create!(name: "Post Malone", performers: 6, headliner: true, festival_id: festival1.id)
+
+                visit "/festivals/#{festival1.id}"
+                click_link "Artists"
+
+                expect(current_path).to eq("/festivals/#{festival1.id}/artists")
+            end
         end
     end
 end

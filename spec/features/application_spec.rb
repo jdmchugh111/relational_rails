@@ -12,9 +12,6 @@ describe "All Pages" do
 
             it "directs to Artist Index when link is clicked" do
                 visit "/festivals"
-
-                save_and_open_page
-
                 click_link "Artist Index"
 
                 expect(current_path).to eq("/artists")
