@@ -13,6 +13,17 @@ describe "Festival Show Page" do
                 expect(page).to have_content("Stages: #{festival1.stages}")
                 expect(page).to have_content("Age Restricted: #{festival1.age_restricted}")
             end
+
+            it "displays a count of all artist in festival" do
+                festival1 = Festival.create!(name: "Bonnaroo", location: "Manchester, TN", stages: 5, age_restricted: true)
+                artist1 = Artist.create!(name: "Pretty Lights", performers: 1, headliner: true, festival_id: festival1.id)
+                artist2 = Artist.create!(name: "Post Malone", performers: 6, headliner: true, festival_id: festival1.id)
+
+                visit "/festivals/#{festival1.id}"
+
+                expect(page).to have_content("Artists: 2")
+            end
+                
         end
     end
 end

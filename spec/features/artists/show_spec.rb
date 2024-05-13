@@ -14,6 +14,7 @@ describe "Artist Show Page" do
                 expect(page).to have_content("Headliner: #{artist1.headliner}")
                 expect(page).to have_content("Festival Id: #{artist1.festival_id}")
             end
+
         end
     end
 end

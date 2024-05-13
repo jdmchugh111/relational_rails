@@ -272,10 +272,39 @@
           null,
           null,
           null,
+          null,
           null
         ]
       },
-      "/Users/james/Turing/Mod_2/relational_rails/spec/features/songs/index_spec.rb": {
+      "/Users/james/Turing/Mod_2/relational_rails/spec/features/festivals/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          2,
+          2,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/james/Turing/Mod_2/relational_rails/spec/features/festivals/show_artists_spec.rb": {
         "lines": [
           1,
           null,
@@ -285,27 +314,6 @@
           1,
           1,
           1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/james/Turing/Mod_2/relational_rails/spec/features/songs/show_artists_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
           1,
           null,
           1,
@@ -323,7 +331,7 @@
           null
         ]
       },
-      "/Users/james/Turing/Mod_2/relational_rails/spec/features/songs/show_spec.rb": {
+      "/Users/james/Turing/Mod_2/relational_rails/spec/features/festivals/show_spec.rb": {
         "lines": [
           1,
           null,
@@ -339,6 +347,17 @@
           1,
           1,
           1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
           null,
           null,
           null,
@@ -416,7 +435,8 @@
           null,
           null,
           1,
-          1,
+          2,
+          2,
           null,
           null,
           1,
@@ -427,6 +447,6 @@
         ]
       }
     },
-    "timestamp": 1715560626
+    "timestamp": 1715565652
   }
 }

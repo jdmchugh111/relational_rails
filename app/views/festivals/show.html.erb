@@ -1,5 +1,12 @@
 <h1><%= @festival.name %></h1>
 
+<% @all_artists = [] %>
+<% @artists.each do |artist| %>
+    <% if artist.festival_id == @festival.id %>
+        <% @all_artists << artist %>
+    <% end %>
+<% end %>
+<p>Artists: <%= @all_artists.count %></p>
 <p>Location: <%= @festival.location %></p>
 <p>Stages: <%= @festival.stages %></p>
 <p>Age Restricted: <%= @festival.age_restricted %></p>
