@@ -15,4 +15,6 @@ Rails.application.routes.draw do
   get "/artists", to: "artists#index"
   get "/artists/:id", to: "artists#show"
   get "festivals/:id/artists", to: "festivals#show_artists"
+  get "festivals/:id/edit", to: "festivals#edit"
+  patch "festivals/:id", to: "festivals#update"
 end

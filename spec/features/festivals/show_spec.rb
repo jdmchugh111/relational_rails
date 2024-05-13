@@ -34,6 +34,15 @@ describe "Festival Show Page" do
 
                 expect(current_path).to eq("/festivals/#{festival1.id}/artists")
             end
+
+            it "has a link that directs you to Edit page" do
+                festival1 = Festival.create!(name: "Bonnaroo", location: "Manchester, TN", stages: 5, age_restricted: true)
+
+                visit "/festivals/#{festival1.id}"
+                click_link "Update Festival"
+
+                expect(current_path).to eq("/festivals/#{festival1.id}/edit")
+            end
         end
     end
 end

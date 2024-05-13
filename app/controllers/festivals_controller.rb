@@ -26,4 +26,20 @@ class FestivalsController < ApplicationController
         festival.save
         redirect_to '/festivals'
     end
+
+    def edit
+        @festival = Festival.find(params[:id])
+    end
+
+    def update
+        festival = Festival.find(params[:id])
+        festival.update({
+            name: params[:name],
+            location: params[:location],
+            stages: params[:stages],
+            age_restricted: params[:age_restricted]
+            })
+        festival.save
+        redirect_to "/festivals/#{festival.id}"
+    end
 end

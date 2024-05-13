@@ -24,6 +24,13 @@ describe "Festival Index Page" do
                 visit "/festivals"
                 expect(page).to have_link "New Festival"
             end
+
+            it "redirects me to New Festival page when I click the link" do
+                visit "/festivals"
+                click_link "New Festival"
+
+                expect(current_path).to eq("/festivals/new")
+            end
         end
     end
 end
