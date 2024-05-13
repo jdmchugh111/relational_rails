@@ -1,0 +1,11 @@
+<form action="/festivals/<%= @festival.id %>/artists" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <h3>Create a New Artist:</h3>
+  <p>Artist Name:</p>
+  <input type='text' name='name'/><br/>
+  <p>Performers:</p>
+  <input type='text' name='performers'/><br/>
+  <p>Headliner:</p>
+  <input type='text' name='headliner'/><br/>
+  <input type='submit' value='Create Artist'/>
+</form>

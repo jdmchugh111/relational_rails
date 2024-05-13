@@ -1,5 +1,6 @@
 <h1><%= @festival.name %></h1>
 
+<a href="artists/new">Create Artist</a>
 <% @all_artists = [] %>
 <% @artists.each do |artist| %>
     <% if artist.festival_id == @festival.id %>

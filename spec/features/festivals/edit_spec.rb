@@ -7,7 +7,7 @@ describe "Edit Festival Page" do
                 festival1 = Festival.create!(name: "Bonnaroo", location: "Manchester, TN", stages: 5, age_restricted: true)
 
                 visit "/festivals/#{festival1.id}/edit"
-                fill_in "name", with: "The Roo", fill_options: { clear: :backspace }
+                fill_in "name", with: "The Roo"
                 click_button "Update"
 
                 expect(current_path).to eq("/festivals/#{festival1.id}")
