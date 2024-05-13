@@ -31,6 +31,14 @@ describe "Festival Index Page" do
 
                 expect(current_path).to eq("/festivals/new")
             end
+
+            it "has a link to edit each festival" do
+                festival1 = Festival.create!(name: "Bonnaroo", location: "Manchester, TN", stages: 5, age_restricted: true)
+
+                visit "/festivals"
+
+                expect(page).to have_link("Edit")
+            end
         end
     end
 end

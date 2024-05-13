@@ -30,6 +30,16 @@ describe "Artist Index Page" do
                 expect(page).to have_content("Post Malone")
                 expect(page).to have_no_content("Pretty Lights")
             end
+
+            it "has a link to edit each artist" do
+                festival1 = Festival.create!(name: "Bonnaroo", location: "Manchester, TN", stages: 5, age_restricted: true)
+                artist1 = Artist.create!(name: "Pretty Lights", performers: 1, headliner: false, festival_id: festival1.id)
+                artist2 = Artist.create!(name: "Post Malone", performers: 6, headliner: true, festival_id: festival1.id)
+
+                visit "/artists"
+
+                expect(page).to have_link("Edit")
+            end
         end
     end
 end
