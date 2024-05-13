@@ -8,7 +8,7 @@ describe "Edit Festival Page" do
 
                 visit "/festivals/#{festival1.id}/edit"
                 fill_in "name", with: "The Roo"
-                click_button "Update"
+                click_button "Update Festival"
 
                 expect(current_path).to eq("/festivals/#{festival1.id}")
                 expect(page).to have_content("The Roo")
