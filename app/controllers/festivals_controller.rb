@@ -1,6 +1,6 @@
 class FestivalsController < ApplicationController
     def index
-        @festivals = Festival.all
+        @festivals = Festival.order(created_at: :desc)
     end
 
     def show
