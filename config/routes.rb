@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   get "/festivals", to: "festivals#index"
+  get "/festivals/new", to: "festivals#new"
+  post "/festivals", to: "festivals#create"
   get "/festivals/:id", to: "festivals#show"
   get "/artists", to: "artists#index"
   get "/artists/:id", to: "artists#show"

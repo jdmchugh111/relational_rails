@@ -1,0 +1,13 @@
+<form action="/festivals" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <h3>Create a New Festival:</h3>
+  <p>Festival Name:</p>
+  <input type='text' name='name'/><br/>
+  <p>Location:</p>
+  <input type='text' name='location'/><br/>
+  <p>Stages:</p>
+  <input type='text' name='stages'/><br/>
+  <p>Age Restricted:</p>
+  <input type='text' name='age_restricted'/><br/>
+  <input type='submit' value='Create Festival'/>
+</form>

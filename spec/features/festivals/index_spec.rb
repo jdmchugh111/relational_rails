@@ -19,6 +19,11 @@ describe "Festival Index Page" do
 
                 expect(that).to appear_before(this)
             end
+
+            it "has a link for New Festival" do
+                visit "/festivals"
+                expect(page).to have_link "New Festival"
+            end
         end
     end
 end
