@@ -240,12 +240,86 @@
           null,
           1,
           1,
+          1,
+          1,
+          1,
           null
         ]
       },
       "/Users/james/Turing/Mod_2/relational_rails/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          null
+        ]
+      },
+      "/Users/james/Turing/Mod_2/relational_rails/spec/features/artists/show_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/james/Turing/Mod_2/relational_rails/spec/features/songs/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/james/Turing/Mod_2/relational_rails/spec/features/songs/show_artists_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
           null
         ]
       },
@@ -265,16 +339,26 @@
           1,
           1,
           1,
-          1,
-          1,
           null,
           null,
           null,
           null
         ]
       },
-      "/Users/james/Turing/Mod_2/relational_rails/app/models/festival.rb": {
+      "/Users/james/Turing/Mod_2/relational_rails/spec/models/artist_spec.rb": {
         "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/james/Turing/Mod_2/relational_rails/app/models/artist.rb": {
+        "lines": [
+          1,
           1,
           null
         ]
@@ -286,9 +370,28 @@
           null
         ]
       },
-      "/Users/james/Turing/Mod_2/relational_rails/app/controllers/festivals_controller.rb": {
+      "/Users/james/Turing/Mod_2/relational_rails/spec/models/festival_spec.rb": {
         "lines": [
           1,
+          null,
+          1,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/james/Turing/Mod_2/relational_rails/app/models/festival.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/james/Turing/Mod_2/relational_rails/app/controllers/artists_controller.rb": {
+        "lines": [
+          1,
+          null,
           1,
           1,
           null,
@@ -304,8 +407,26 @@
           1,
           null
         ]
+      },
+      "/Users/james/Turing/Mod_2/relational_rails/app/controllers/festivals_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1715223282
+    "timestamp": 1715560626
   }
 }

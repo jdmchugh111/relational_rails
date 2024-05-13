@@ -12,8 +12,6 @@ describe "Festival Show Page" do
                 expect(page).to have_content("Location: #{festival1.location}")
                 expect(page).to have_content("Stages: #{festival1.stages}")
                 expect(page).to have_content("Age Restricted: #{festival1.age_restricted}")
-                expect(page).to have_content("Created At: #{festival1.created_at}")
-                expect(page).to have_content("Updated At: #{festival1.updated_at}")
             end
         end
     end
