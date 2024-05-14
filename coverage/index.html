@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2024-05-14T00:13:13-04:00">2024-05-14T00:13:13-04:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2024-05-14T01:06:41-04:00">2024-05-14T01:06:41-04:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -30,7 +30,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.2
+         1.23
        </span>
     </span> hits/line
     )
@@ -43,8 +43,8 @@
   </div>
 
   <div class="t-line-summary">
-    <b>390</b> relevant lines,
-    <span class="green"><b>390</b> lines covered</span> and
+    <b>404</b> relevant lines,
+    <span class="green"><b>404</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -95,11 +95,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#511748f7f946b9ce68da852ded070e5b3f619c25" class="src_link" title="app/controllers/festival_artists_controller.rb">app/controllers/festival_artists_controller.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">13</td>
-            <td class="cell--number">6</td>
-            <td class="cell--number">6</td>
+            <td class="cell--number">15</td>
+            <td class="cell--number">8</td>
+            <td class="cell--number">8</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">5.33</td>
+            <td class="cell--number">6.13</td>
             
           </tr>
         
@@ -140,8 +140,8 @@
             <td class="strong t-file__name"><a href="#91b3be23161df4de43088941ed36a966e31664d3" class="src_link" title="app/models/artist.rb">app/models/artist.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">10</td>
-            <td class="cell--number">2</td>
-            <td class="cell--number">2</td>
+            <td class="cell--number">4</td>
+            <td class="cell--number">4</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -316,8 +316,8 @@
             <td class="strong t-file__name"><a href="#2af92466f52f1444d50c9447774391b56a704998" class="src_link" title="spec/features/festival_artists/index_spec.rb">spec/features/festival_artists/index_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">80</td>
-            <td class="cell--number">43</td>
-            <td class="cell--number">43</td>
+            <td class="cell--number">53</td>
+            <td class="cell--number">53</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -1021,8 +1021,8 @@
     
 
     <div class="t-line-summary">
-      <b>6</b> relevant lines.
-      <span class="green"><b>6</b> lines covered</span> and
+      <b>8</b> relevant lines.
+      <span class="green"><b>8</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -1067,8 +1067,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="10" data-linenumber="4">
-            <span class="hits">10</span>
+          <li class="covered" data-hits="12" data-linenumber="4">
+            <span class="hits">12</span>
             
 
             
@@ -1089,8 +1089,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="10" data-linenumber="6">
-            <span class="hits">10</span>
+          <li class="covered" data-hits="12" data-linenumber="6">
+            <span class="hits">12</span>
             
 
             
@@ -1111,24 +1111,24 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="8">
-            
-            
-
+          <li class="covered" data-hits="11" data-linenumber="8">
+            <span class="hits">11</span>
             
 
-            <code class="ruby">        else</code>
+            
+
+            <code class="ruby">        elsif params[:threshold].present?</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="9" data-linenumber="9">
-            <span class="hits">9</span>
+          <li class="covered" data-hits="1" data-linenumber="9">
+            <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">            @artists = Artist.all</code>
+            <code class="ruby">            @artists = Artist.filter(params[:threshold])</code>
           </li>
         </div>
       
@@ -1139,18 +1139,18 @@
 
             
 
-            <code class="ruby">        end</code>
+            <code class="ruby">        else</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="11">
-            
-            
-
+          <li class="covered" data-hits="10" data-linenumber="11">
+            <span class="hits">10</span>
             
 
-            <code class="ruby">    end</code>
+            
+
+            <code class="ruby">            @artists = Artist.all</code>
           </li>
         </div>
       
@@ -1161,12 +1161,34 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">        end</code>
           </li>
         </div>
       
         <div>
           <li class="never" data-hits="" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
             
             
 
@@ -1838,8 +1860,8 @@
     
 
     <div class="t-line-summary">
-      <b>2</b> relevant lines.
-      <span class="green"><b>2</b> lines covered</span> and
+      <b>4</b> relevant lines.
+      <span class="green"><b>4</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -1917,24 +1939,24 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="7">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">    # def self.filter</code>
+            
+
+            <code class="ruby">    def self.filter(number)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="8">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="8">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">    #     Artist.where(:performers &gt; :threshold)</code>
+            
+
+            <code class="ruby">        Artist.where(&quot;performers &gt; #{number}&quot;)</code>
           </li>
         </div>
       
@@ -1945,7 +1967,7 @@
 
             
 
-            <code class="ruby">    # end</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -6470,8 +6492,8 @@
     
 
     <div class="t-line-summary">
-      <b>43</b> relevant lines.
-      <span class="green"><b>43</b> lines covered</span> and
+      <b>53</b> relevant lines.
+      <span class="green"><b>53</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -7176,46 +7198,46 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="64">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="64">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">            # it &quot;can filter artists by threshold&quot; do</code>
+            
+
+            <code class="ruby">            it &quot;can filter artists by threshold&quot; do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="65">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="65">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">            #     festival1 = Festival.create!(name: &quot;Bonnaroo&quot;, location: &quot;Manchester, TN&quot;, stages: 5, age_restricted: true)</code>
+            
+
+            <code class="ruby">                festival1 = Festival.create!(name: &quot;Bonnaroo&quot;, location: &quot;Manchester, TN&quot;, stages: 5, age_restricted: true)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="66">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="66">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">            #     artist1 = Artist.create!(name: &quot;Pretty Lights&quot;, performers: 1, headliner: false, festival_id: festival1.id)</code>
+            
+
+            <code class="ruby">                artist1 = Artist.create!(name: &quot;Pretty Lights&quot;, performers: 1, headliner: false, festival_id: festival1.id)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="67">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="67">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">            #     artist2 = Artist.create!(name: &quot;Post Malone&quot;, performers: 6, headliner: true, festival_id: festival1.id)</code>
+            
+
+            <code class="ruby">                artist2 = Artist.create!(name: &quot;Post Malone&quot;, performers: 6, headliner: true, festival_id: festival1.id)</code>
           </li>
         </div>
       
@@ -7231,35 +7253,35 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="69">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="69">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">            #     visit &quot;/festivals/#{festival1.id}/artists&quot;</code>
+            
+
+            <code class="ruby">                visit &quot;/festivals/#{festival1.id}/artists&quot;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="70">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="70">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">            #     fill_in &quot;threshold&quot;, with: &quot;3&quot;</code>
+            
+
+            <code class="ruby">                fill_in &quot;threshold&quot;, with: &quot;3&quot;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="71">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="71">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">            #     click_button &quot;Filter by Threshold&quot;</code>
+            
+
+            <code class="ruby">                click_button &quot;filter&quot;</code>
           </li>
         </div>
       
@@ -7275,35 +7297,35 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="73">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="73">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">            #     expect(current_path).to eq(&quot;/festivals/#{festival1.id}/artists&quot;)</code>
+            
+
+            <code class="ruby">                expect(current_path).to eq(&quot;/festivals/#{festival1.id}/artists&quot;)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="74">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="74">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">            #     expect(page).to have_content(&quot;Post Malone&quot;)</code>
+            
+
+            <code class="ruby">                expect(page).to have_content(&quot;Post Malone&quot;)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="75">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="75">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">            #     expect(page).to have_no_content(&quot;Pretty Lights&quot;)</code>
+            
+
+            <code class="ruby">                expect(page).to have_no_content(&quot;Pretty Lights&quot;)</code>
           </li>
         </div>
       
@@ -7314,7 +7336,7 @@
 
             
 
-            <code class="ruby">            # end</code>
+            <code class="ruby">            end</code>
           </li>
         </div>
       

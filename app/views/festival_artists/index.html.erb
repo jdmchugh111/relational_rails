@@ -3,6 +3,12 @@
 <a href="artists/new">Create Artist</a>
 <br>
 <%= link_to "Sort Artists by Name", "artists?sort=alpha" %>
+<br>
+<%= form_with url: "artists?threshold=number", method: :get, data: {turbo: false} do |form| %>
+    <p>Must Have More Than This Number of Performers</p>
+    <%= form.text_field :threshold %>
+    <%= form.submit 'filter' %>
+<% end %>
 <% @all_artists = [] %>
 <% @artists.each do |artist| %>
     <% if artist.festival_id == @festival.id %>

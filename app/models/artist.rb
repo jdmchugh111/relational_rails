@@ -4,7 +4,7 @@ class Artist < ApplicationRecord
     # def self.sort_by_name
     #     Artist.order(:name)
     # end
-    # def self.filter
-    #     Artist.where(:performers > :threshold)
-    # end
+    def self.filter(number)
+        Artist.where("performers > #{number}")
+    end
 end
