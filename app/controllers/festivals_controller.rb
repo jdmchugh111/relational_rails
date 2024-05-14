@@ -37,4 +37,9 @@ class FestivalsController < ApplicationController
         festival.save
         redirect_to "/festivals/#{festival.id}"
     end
+
+    def destroy
+        Festival.destroy(params[:id])
+        redirect_to '/festivals'
+    end
 end

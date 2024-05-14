@@ -14,3 +14,8 @@
 <p>Location: <%= @festival.location %></p>
 <p>Stages: <%= @festival.stages %></p>
 <p>Age Restricted: <%= @festival.age_restricted %></p>
+<form action="/festivals/<%= @festival.id %>" method="POST">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="submit" value="delete"/>
+</form>
