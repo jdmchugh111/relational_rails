@@ -39,6 +39,16 @@ describe "Festival Index Page" do
 
                 expect(page).to have_link("Edit")
             end
+
+            it "has a delete button that works" do
+                festival1 = Festival.create!(name: "Bonnaroo", location: "Manchester, TN", stages: 5, age_restricted: true)
+
+                visit "/festivals"
+                click_button "delete"
+
+                expect(current_path).to eq("/festivals")
+                expect(page).to have_no_content("Bonnaroo")
+            end
         end
     end
 end

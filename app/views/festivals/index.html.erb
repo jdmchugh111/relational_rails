@@ -6,4 +6,9 @@
     <h3><%= festival.name %></h3>
     <p>Created At: <%= festival.created_at %></p>
     <a href="/festivals/<%= festival.id  %>/edit">Edit</a>
+    <form action="/festivals/<%= festival.id %>" method="POST">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="submit" value="delete"/>
+    </form>
 <% end %>

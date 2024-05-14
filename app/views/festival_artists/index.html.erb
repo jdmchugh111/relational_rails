@@ -14,4 +14,9 @@
         <p>Performers: <%= artist.performers %></p>
         <p>Headliner: <%= artist.headliner %></p>
         <a href="/artists/<%= artist.id  %>/edit">Edit</a>
+        <form action="/artists/<%= artist.id %>" method="POST">
+        <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+        <input type="hidden" name="_method" value="DELETE">
+        <input type="submit" value="delete"/>
+        </form>
 <% end %>

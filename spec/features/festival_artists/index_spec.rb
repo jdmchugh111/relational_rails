@@ -50,6 +50,31 @@ describe "Festival Artist Index Page" do
                 expect(page).to have_link("Edit")
             end
 
+            it "has a delete button that works" do
+                festival1 = Festival.create!(name: "Bonnaroo", location: "Manchester, TN", stages: 5, age_restricted: true)
+                artist1 = Artist.create!(name: "Pretty Lights", performers: 1, headliner: true, festival_id: festival1.id)
+
+                visit "/festivals/#{festival1.id}/artists"
+                click_button "delete"
+
+                expect(current_path).to eq("/artists")
+                expect(page).to have_no_content("Pretty Lights")
+            end
+
+            # it "can filter artists by threshold" do
+            #     festival1 = Festival.create!(name: "Bonnaroo", location: "Manchester, TN", stages: 5, age_restricted: true)
+            #     artist1 = Artist.create!(name: "Pretty Lights", performers: 1, headliner: false, festival_id: festival1.id)
+            #     artist2 = Artist.create!(name: "Post Malone", performers: 6, headliner: true, festival_id: festival1.id)
+
+            #     visit "/festivals/#{festival1.id}/artists"
+            #     fill_in "threshold", with: "3"
+            #     click_button "Filter by Threshold"
+
+            #     expect(current_path).to eq("/festivals/#{festival1.id}/artists")
+            #     expect(page).to have_content("Post Malone")
+            #     expect(page).to have_no_content("Pretty Lights")
+            # end
+
         end
     end
 end

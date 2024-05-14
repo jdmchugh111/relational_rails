@@ -35,6 +35,7 @@ describe "Artist Show Page" do
                 expect(current_path).to eq("/artists")
                 expect(page).to have_no_content("Pretty Lights")
             end
+
         end
     end
 end
