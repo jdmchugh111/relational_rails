@@ -25,6 +25,16 @@ describe "Artist Show Page" do
                 expect(current_path).to eq("/artists/#{artist1.id}/edit")
             end
 
+            it "can delete an artist" do
+                festival1 = Festival.create!(name: "Bonnaroo", location: "Manchester, TN", stages: 5, age_restricted: true)
+                artist1 = Artist.create!(name: "Pretty Lights", performers: 1, headliner: true, festival_id: festival1.id)
+
+                visit "/artists/#{artist1.id}"
+                click_button "delete"
+
+                expect(current_path).to eq("/artists")
+                expect(page).to have_no_content("Pretty Lights")
+            end
         end
     end
 end
